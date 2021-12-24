@@ -1,11 +1,11 @@
 import React from "react";
-import { Navigarion } from ".";
+import { Navigation } from ".";
 
 export const Layout: React.FC = ({ children }) => {
   return (
     <div>
       <Navigation />
-      <Container>{children}</Container>
+      <div>{children}</div>
     </div>
   );
 };
