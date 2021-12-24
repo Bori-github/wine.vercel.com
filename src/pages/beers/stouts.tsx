@@ -1,28 +1,13 @@
 import { NextPage } from "next";
-import { Beer } from "../../types/Beer";
-import { useBeerData } from "../../hooks/useBeersData";
+import { BeerContainer } from "../../components";
 
 const StoutsPage: NextPage = () => {
-  const { data, error } = useBeerData("stouts");
-
-  if (error) return <div>Faild to Loading...</div>;
-  if (!data) return <div>...Loading</div>;
+  const name = "stouts";
 
   return (
     <div>
-      <h1>Stouts</h1>
-      <main>
-        {data.map((beerData: Beer) => {
-          const { id, name, price } = beerData;
-
-          return (
-            <div key={`stouts-beer-list-${beerData.id}`}>
-              <h1>{name}</h1>
-              <p>{price}</p>
-            </div>
-          );
-        })}
-      </main>
+      <h1>{name} beer</h1>
+      <BeerContainer name={name} />
     </div>
   );
 };
