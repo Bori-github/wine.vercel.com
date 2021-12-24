@@ -1,6 +1,11 @@
 import React from "react";
-import { Navigation } from "./Navigation";
+import { Navigarion } from ".";
 
 export const Layout: React.FC = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <Navigation />
+      <Container>{children}</Container>
+    </div>
+  );
 };
