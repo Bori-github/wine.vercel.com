@@ -8,13 +8,13 @@ interface ROUTE {
   SUBS?: Array<ROUTE>;
 }
 
-export const Navigarion = () => {
+export const Navigation = () => {
   return (
     <header>
       <h1>Wine and Beers</h1>
       <nav>
         <ul>
-          {ROUTE.map((routeObject: ROUTE) => {
+          {ROUTES.map((routeObject: ROUTE) => {
             return (
               <li key={`main-menu-${routeObject.ID}`}>
                 <Link href={routeObject.PATH}>

@@ -1,12 +1,12 @@
 import { NextPage } from "next";
-import { WineContiner } from "../../components";
+import { WineContainer } from "../../components";
 
 const SparklingPage: NextPage = () => {
   const name = "sparkling";
 
   return (
     <div>
-      <WineContiner name={name} />
+      <WineContainer name={name} />
     </div>
   );
 };
