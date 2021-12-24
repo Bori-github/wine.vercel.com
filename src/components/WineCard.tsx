@@ -25,3 +25,23 @@ export const WineCard = ({ wineData }: WineProps) => {
     </Container>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1em;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+`;
+
+const Average = styled.span`
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0.3em;
+  background: #2ac1bc;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+`;
